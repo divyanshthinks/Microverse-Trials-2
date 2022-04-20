@@ -1,18 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body{
+            background-color: rgba(104, 133, 80, 0.849);
+            background-image: url("https://wallpaperaccess.com/full/2041777.jpg");
+            text-emphasis-color: red;
+        }
+        #title{
+            text-align: center;
+            font-size: 40px;
+        }
+        #survey-form{
+            text-align: center;
+        }
+        #description{
+            text-align: center;
+            font-size: 20px;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>microverse survey form</title>
 </head>
 <body>
-    <h1 id="title"> Survey form </h1>
-    <p id="description"> this is a survey form </p>
+    <h1 id="title" style = "color: red"> Survey form </h1>
+    <p id="description" style = "color: red"> This is a survey form </p>
+    <section>
     <form id="survey-form" action="sumbit">
-        <input type="text" id="name"> </input>
-        <input type="email" id="email"></input>
-        <input type="number" id="number"></input>
+        <label for = "name" id = "name-label"> Enter Your Name</label>
+        <input type="text" id="name" placeholder = "Enter your name" style = "color: red" required> </input>
+        <br>
+        <label for = "email" id = "email-label"> Enter Your Email</label>
+        <input type="email" id="email" placeholder = "Enter your email" style = "color: red" required></input>
+        <br>
+        <label for = "number" id = "number-label"> Enter Your Number</label>
+        <input type="number" min = "0000000000" max = "9999999999" id="number"  style = "color: red" placeholder = "Enter Your Phone Number" required></input>
+        <br>
+        <br>
+      <select id = "dropdown">
+          <option>Naruto</option>
+          <option> evangelion</option>
+          <option> Death Note</option>
+          <option> Code Geass</option>
+          <option> Dragon Ball</option>
+      </select>
+      <br>
+      <br>
+      <label for = "One-Piece"></label>
+      <input type = "radio" name = "select" id="One-Piece" value = "One Piece" style = "color: red"> One Piece </input>
+      <br>
+    <label for = "Clannad"></label>
+    <input type = "radio" name = "select" id="Clannad" value = "Clannad" style = "color: red"> Clannad </input>
+    <br>
+    <label for = "Your-Name"></label>
+    <input type = "radio" name = "select" id = "Your-Name" value = "Your Name" style = "color: red"> Your Name </input>
+    <br>
+    <br>
+    <label for = "Atack"> </label>
+    <input type = "checkbox" id = "Attack" value = "Attack On Titan" style = "color: red"> Attack On Titan </input>
+    <br>
+    <label for = "Full"></label>
+    <input type = "checkbox" id = "Full" value = "Fullmetal Alchemist" style = "color: red"> Fullmetal Alchemist </input>
+    <br>
+    <label for = "Sword"></label>
+    <input type = "checkbox" id = "Sword" value = "Sword Art Online" style = "color: red"> Sword Art Online </input>
+    <br>
+    <br>
+    <textarea></textarea>
+    <button type = "submit" id = "submit"> Submit </button>
     </form>
+    </section>
 </body>
 </html>
